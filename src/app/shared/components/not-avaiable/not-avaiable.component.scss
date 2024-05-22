@@ -1,0 +1,12 @@
+.contenido-not-avaiable{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    img{
+        width: 20vh;
+        height: 20vh;
+    }
+}
