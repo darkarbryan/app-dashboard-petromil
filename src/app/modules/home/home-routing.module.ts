@@ -20,6 +20,10 @@ const routes: Routes = [
         loadChildren: () => import('@modules/aprobaciones/aprobaciones.module').then(m => m.AprobacionesModule)
     },
     {
+        path: 'garantias',
+        loadChildren: () => import('@modules/garantias/garantias.module').then(m => m.GarantiasModule)
+    },
+    {
         path: '**',
         pathMatch: 'prefix',
         redirectTo: '',
