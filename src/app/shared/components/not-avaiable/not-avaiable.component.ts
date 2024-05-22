@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-not-avaiable',
@@ -7,11 +8,17 @@ import { Component, Input } from '@angular/core';
 })
 export class NotAvaiableComponent {
 
+  constructor(private router: Router) {}
+
   ngOnInit():void{
 
   }
 
   @Input() nameModule: string = "";
   @Input() nameComponent: string = "";
+
+  returnToHome():void{
+    this.router.navigate(['/home']);
+  }
 
 }
