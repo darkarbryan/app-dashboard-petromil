@@ -19,6 +19,24 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
+    /* DEFINICION DE ALIAS PARA RUTAS LARGAS */
+    "paths": {
+      "@core/*":[
+        "./src/app/core/*"
+      ],
+      "@shared/*":[
+        "./src/app/shared/*"
+      ],
+      "@modules/*":[
+        "./src/app/modules/*"
+      ],
+      "@guards/*":[
+        "./src/app/guards/*"
+      ],
+      "@interceptors/*":[
+        "./src/app/interceptors/*"
+      ]
+    },
     "lib": [
       "ES2022",
       "dom"
